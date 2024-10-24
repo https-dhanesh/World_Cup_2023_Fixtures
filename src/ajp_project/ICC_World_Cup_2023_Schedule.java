@@ -921,7 +921,7 @@ public class ICC_World_Cup_2023_Schedule extends javax.swing.JFrame {
         frame.jTable1.setDefaultEditor(Object.class, null);
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
-            c=DriverManager.getConnection("jdbc:mysql://localhost:3306/ajp_project","root","@#56Dhanesh");
+            c=DriverManager.getConnection("jdbc:mysql://localhost:3306/ajp_project","root","Enter_your_password");
             try (Statement st = c.createStatement()) {
                 
                 String query = "select * from schedule";
